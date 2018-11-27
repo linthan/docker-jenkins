@@ -18,5 +18,6 @@ ENV JENKINS_HOME /jenkins
 
 ENTRYPOINT ["java", "-jar", "/usr/share/jenkins/jenkins.war"]
 EXPOSE 8080
+EXPOSE 50000
 
 CMD [""]
