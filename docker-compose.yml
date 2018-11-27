@@ -1,0 +1,9 @@
+version: "3"
+services:
+  jenkins:
+    build: .
+    ports:
+      - "32768:8080"
+    restart: always
+    volumes:
+      - /var/jenkins:/jenkins
