@@ -1,9 +1,9 @@
 version: "3"
 services:
   jenkins:
-    build: .
+    iamge: jenkins
     ports:
       - "32768:8080"
     restart: always
     volumes:
-      - /var/jenkins:/jenkins
+      - /var/jenkins:/var/jenkins_home
