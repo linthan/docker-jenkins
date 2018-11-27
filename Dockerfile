@@ -8,7 +8,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* \
     && apt-get install build-essential
 
-ADD http://mirrors.jenkins-ci.org/war/2.87/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/2.138/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
 
