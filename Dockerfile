@@ -4,9 +4,8 @@ MAINTAINER  Ethan "445366464@qq.com"
 ADD ./sources.list /etc/apt/sources.list
 
 RUN apt-get update && \
-    apt-get --no-install-recommends install -q -y openjdk-8-jre-headless && \
-    rm -rf /var/lib/apt/lists/* \
-    && apt-get install build-essential
+    apt-get --no-install-recommends install -q -y openjdk-8-jre-headless build-essential && \
+    rm -rf /var/lib/apt/lists/* 
 
 ADD http://mirrors.jenkins-ci.org/war/2.138/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
